@@ -1,0 +1,72 @@
+media:
+  input: assets/uploads
+  output: /assets/uploads
+content:
+  - name: site
+    label: Contenido de la web
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: tagline
+        label: Lema
+        type: string
+      - name: subtitle
+        label: Texto de portada
+        type: text
+      - name: hero_image
+        label: Fotografía de portada
+        type: image
+      - name: teacher_image
+        label: Fotografía del equipo docente
+        type: image
+      - name: school_title
+        label: Título de la escuela
+        type: string
+      - name: school_text
+        label: Presentación de la escuela
+        type: text
+      - name: classes_intro
+        label: Introducción a clases
+        type: text
+      - name: tango_description
+        label: Descripción de tango
+        type: text
+      - name: milonga_description
+        label: Descripción de milonga
+        type: text
+      - name: vals_description
+        label: Descripción de vals
+        type: text
+      - name: community_text
+        label: Texto de comunidad
+        type: text
+      - name: teachers_text
+        label: Texto del equipo docente
+        type: text
+      - name: contact_text
+        label: Texto de contacto
+        type: text
+      - name: whatsapp
+        label: WhatsApp con código país
+        type: string
+      - name: instagram
+        label: Usuario de Instagram
+        type: string
+      - name: schedule
+        label: Horarios
+        type: text
+      - name: location
+        label: Ubicación
+        type: text
+      - name: gallery
+        label: Fotografías de la galería
+        type: object
+        list: true
+        fields:
+          - name: image
+            label: Fotografía
+            type: image
+          - name: caption
+            label: Descripción accesible
+            type: string
